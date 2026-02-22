@@ -1,0 +1,16 @@
+name: Print Numbers 1 to 9
+
+on:
+  push:
+
+jobs:
+  print-numbers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print numbers
+        run: |
+          for i in {1..9}
+          do
+            echo $i
+          done
